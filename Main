@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suchtfieber Musik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-6 bg-black shadow-md">
+    <div class="flex items-center gap-2">
+      <img src="/assets/suchtfieber-logo.png" alt="Suchtfieber Logo" class="h-8 w-8">
+      <span class="text-xl font-bold text-white">Suchtfieber</span>
+    </div>
+    <nav class="space-x-6 text-gray-300">
+      <a href="#" class="hover:text-white">Home</a>
+      <a href="#releases" class="hover:text-white">Releases</a>
+      <a href="#about" class="hover:text-white">Über uns</a>
+      <a href="#contact" class="hover:text-white">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://source.unsplash.com/1600x900/?music,dark');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-xl">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Der Sound von Suchtfieber</h1>
+      <a href="#releases" class="mt-4 px-6 py-3 bg-green-500 text-black font-semibold rounded hover:bg-green-400 transition">Jetzt hören</a>
+    </div>
+  </section>
+
+  <!-- Releases -->
+  <section id="releases" class="py-12 px-6 md:px-12">
+    <h2 class="text-3xl font-bold mb-8">Releases</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Release 1 -->
+      <div class="bg-zinc-900 p-4 rounded-xl hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x400/?album,1" class="rounded-lg mb-4" alt="Album 1">
+        <h3 class="text-xl font-semibold mb-2">Titel: Nachtfieber</h3>
+        <p class="text-gray-400 mb-4">2025 · EP</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1s6UX0lNiTziSrd7iua8e5?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+
+      <!-- Repeatable for more releases -->
+      <div class="bg-zinc-900 p-4 rounded-xl hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x400/?album,2" class="rounded-lg mb-4" alt="Album 2">
+        <h3 class="text-xl font-semibold mb-2">Titel: Suchtmodus</h3>
+        <p class="text-gray-400 mb-4">2024 · Single</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp?utm_source=generator" width="100%" height="80"></iframe>
+      </div>
+
+      <div class="bg-zinc-900 p-4 rounded-xl hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x400/?album,3" class="rounded-lg mb-4" alt="Album 3">
+        <h3 class="text-xl font-semibold mb-2">Titel: Frequenz</h3>
+        <p class="text-gray-400 mb-4">2023 · Album</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3?utm_source=generator" width="100%" height="80"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-12 bg-zinc-800 text-gray-200">
+    <h2 class="text-3xl font-bold mb-6">Über Suchtfieber</h2>
+    <p class="max-w-3xl">Suchtfieber ist ein Musikprojekt aus Deutschland mit Fokus auf elektronische, düstere und energetische Sounds. Unsere Mission ist es, Klangwelten zu erschaffen, die unter die Haut gehen – roh, ehrlich und emotional.</p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-12 px-6 md:px-12">
+    <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
+    <p class="mb-4">E-Mail: kontakt@suchtfieber.de</p>
+    <p>Instagram: <a href="https://instagram.com/suchtfieber" target="_blank" class="text-green-400 hover:underline">@suchtfieber</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 py-6 text-center">
+    © 2025 Suchtfieber. All rights reserved.
+  </footer>
+
+</body>
+</html>
